@@ -1,0 +1,83 @@
+@import url(./style.css);
+
+.project-section{
+    width: 100%;
+    background: #eee;
+}
+.project-section .choose-category{
+    padding: 2rem;
+    text-align: center;
+    background: #ddd;
+}
+.project-section .choose-category .btn{
+    font-size: 1.5rem;
+    border: 1.5px solid #111;
+    border-radius: 5px;
+    padding: .8rem 2rem;
+    margin: 0 2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+.project-section .choose-category .btn:hover{
+    background: #0f360f;
+    color: #ddd;
+}
+
+.content-container{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+.content{
+    display: none;
+}
+.content > img{
+    display: block;
+    object-fit: fill;
+    width: 100%;
+    height: 290px;
+    border-radius: 3px;
+}
+.content > video{
+    display: block;
+    object-fit: fill;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+/* SHOW FILTERED ELEMENTS */
+.show{
+    display: block;
+}
+
+/* MEDIA */
+@media (max-width: 1000px){
+    .content-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px){
+    .content-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project-section .choose-category{
+        display: flex;
+        text-align: left;
+    }
+
+    .content > img{
+        height: 240px;
+    }
+}
+
+@media (max-width: 410px){
+    .project-section .choose-category .btn{
+        font-size: 1.5rem;
+        margin: 0 .5rem;
+        padding: .5rem 1.5rem;    
+    }
+}

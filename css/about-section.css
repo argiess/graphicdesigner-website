@@ -1,0 +1,66 @@
+@import url(./style.css);
+
+.about-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5%;
+    gap: 5rem;
+    color: #eee;
+    background: linear-gradient(to right, #0f360f 10%, #111);
+}
+.about-section .left{
+    width: 50%;
+}
+.about-section .left h2{
+    font-size: 4.5rem;
+    color: #adff2fb3;
+}
+.about-section .left h2:first-child{
+    font-size: 3.5rem;
+}
+.about-section .left p{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.about-section .right img{
+    display: block;
+    width: 100%;
+    height: 360px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px greenyellow;
+}
+
+/* MEDIA */
+@media(max-width: 900px){
+    .about-section .left h2{
+        font-size: 4rem;
+        color: #adff2fb3;
+    }
+    .about-section .left h2:first-child{
+        font-size: 3rem;
+    }
+    .about-section .left p{
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+    }
+}
+@media(max-width: 800px){
+    .about-section{
+        padding: 2.5rem 1%;
+    }
+    .about-section{
+        flex-wrap: wrap;
+    }
+    .about-section .left{
+        width: 90%;
+    }
+    .about-section .left h2{
+        font-size: 3rem;
+    }
+    .about-section .right img{
+        height: 200px;
+    }
+}

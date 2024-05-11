@@ -1,0 +1,46 @@
+@import url(./style.css);
+
+.footer{
+    width: 100%;
+    padding: 5rem;
+    background: #111;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p{
+    font-size: 1.5rem;
+}
+.footer .socials i{
+    font-size: 2rem;
+    color: aliceblue;
+    padding: .5rem;
+    margin-right: 2rem;
+    border: 1.5px solid aliceblue;
+    border-radius: 50%;
+}
+.footer .socials i:hover{
+    color: #111;
+    background: aliceblue;
+    box-shadow: 0 0 10px #111;
+}
+
+/* MEDIA */
+@media (max-width: 650px){
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer p{
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 410px){
+    .footer .socials i{
+        margin-right: .5rem;
+    }
+    .footer p{
+        font-size: 1.2rem;
+    }
+}

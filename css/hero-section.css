@@ -1,0 +1,50 @@
+@import url(./style.css);
+
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    background: url(../imgs/hero-section-bg.jpg) no-repeat;
+    background-size: cover;
+    background-color: #777;
+    background-blend-mode: multiply;
+    text-align: center;
+    align-content: center;
+}
+
+.hero-section h1{
+    font-family: 'Platypi', Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    color: #eee;
+}
+.hero-section h1:first-child{
+    color: #adff2fb3;
+}
+.hero-section h1:nth-child(2){
+    margin-bottom: 10rem;
+}
+.hero-section a{
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 2.5rem;
+    border-radius: 25px;
+    background: #adff2fe6;
+}
+.hero-section a:hover{
+    background: #b7ff4ce6;
+}
+
+@media(max-width: 800px){
+    .hero-section{
+        background-position: top;
+        padding: 0 1.5%;
+    }
+    .hero-section h1{
+        font-size: 3rem;
+    }
+    .hero-section a{
+        font-size: 1.5rem;
+    }
+    .hero-section h1:nth-child(2){
+        margin-bottom: 5rem;
+    }
+}

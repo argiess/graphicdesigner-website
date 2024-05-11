@@ -1,0 +1,46 @@
+@import url(./style.css);
+
+/* HEADER MEDIA */
+@media(max-width: 800px){
+    .header{
+        background: #eee;
+    }
+
+    .nav-menu{
+        position: fixed;    
+        left: -100%;
+        top: 7rem;
+        width: 100%;
+        gap: 0;
+        padding: 2rem 0;
+        flex-direction: column;
+        text-align: center;
+        background: #ddd;
+        transition: .2s;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .nav-menu .nav-list{
+        margin: 2rem 0;
+    }
+    .nav-menu .nav-link:hover, .nav-menu .curr{
+        color: green;
+    }
+    
+    /* BURGER */
+    .nav-bar .burger{
+        display: block;
+    }
+    .nav-bar .burger.active .bar:nth-child(1){
+        background-color: #111;
+        transform: translateY(8px) rotate(45deg);
+    }
+    .nav-bar .burger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .nav-bar .burger.active .bar:nth-child(3){
+        background-color: #111;
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

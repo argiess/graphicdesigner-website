@@ -1,0 +1,60 @@
+@import url(./style.css);
+
+.service-section{
+    width: 100%;
+    padding: 5rem 5%;
+    text-align: center;
+    color: #eee;
+    background: linear-gradient(to right, #111 10%, #0f360f);
+}
+.service-section h2{
+    font-size: 4rem;
+    font-family: 'Platypi', Arial, Helvetica, sans-serif;
+    margin-bottom: 5rem;
+}
+.service-section p{
+    font-size: 1.5rem;
+}
+
+.service-section .services{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.service-section .services .div{
+    margin-bottom: 2rem;
+}
+.service-section .services h3{
+    font-size: 3rem;
+    font-family: 'Platypi', Arial, Helvetica, sans-serif;
+    margin-bottom: 3rem;
+}
+
+.services .div video, .services .div img{
+    width: fit-content;
+    height: 200px;
+    border-radius: 5px;
+    border: 1.5px solid #eee;
+    box-shadow: 0 0 10px yellow;
+}
+
+/* MEDIA */
+@media(max-width: 800px){
+    .services .div video, .services .div img{
+        width: fit-content;
+        height: 150px;
+    }
+    .service-section h2{
+        font-size: 3rem;
+    }
+    .service-section .services h3{
+        font-size: 2.5rem;
+    }
+    .service-section p{
+        text-align: left;
+    }
+}

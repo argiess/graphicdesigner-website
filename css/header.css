@@ -1,0 +1,47 @@
+@import url(./style.css);
+
+.header{
+    position: fixed;
+    top: 0;
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background: #fff;
+    z-index: 100;
+}
+
+.div-logo .logo{
+    font-size: 2.5rem;
+    font-family: 'Platypi', Arial, Helvetica, sans-serif;
+    color: #5c8f10;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 5rem;
+}
+.nav-menu .nav-link{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.nav-menu .nav-link:hover, .nav-menu .curr{
+    color: #5c8f10;
+}
+
+/* BURGER */
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger .bar{
+    display: block;
+    background: #111;
+    width: 2.5rem;
+    height: .3rem;
+    margin: .5rem auto;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
